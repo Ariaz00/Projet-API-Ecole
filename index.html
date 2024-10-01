@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <title>Ecole Astralis</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="left">
+                <h1><a href="./index.html">Ecole Astralis</a></h1>
+            </div>
+            <div class="center">
+                <h1>Promo</h1>
+            </div>
+            <div class="right">
+                <button id="ajoutPromo" onclick="ajoutPromo()">Ajouter promo</button>
+            </div> 
+        </div>
+
+    </header>
+    <main>
+        <div class="promos" id="promos">
+            <div id="lespromos">
+                <!-- Les promotions seront ajoutées ici -->
+            </div>
+        </div>
+        <div class="ajoutPromo hidden" id="ajoutPromoDiv">
+            <form id="promoForm" action="javascript:void(0);">
+                <input type="hidden" id="promoId">
+                <label for="name">Nom de la promo</label>
+                <input type="text" id="name">
+                <p id="errorNamePromo"></p>
+                <label for="startDate">Date de début</label>
+                <input type="date" id="startDate">
+                <p id="errorStartDate"></p>
+                <label for="endDate">Date de fin</label>
+                <input type="date" id="endDate">
+                <p id="errorEndDate"></p>
+                <button id="buttonEnvoyer" type="button" onclick="addOrUpdatePromo()">Envoyer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <button onclick="retour()">Retour</button>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

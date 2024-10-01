@@ -1,0 +1,59 @@
+/*TEL*/
+
+@media (max-width: 430px) {
+div.promo{
+    width: 80%;
+    margin:30px;
+}
+
+.promo>button{
+    margin-bottom: 10px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#ajoutPromoDiv{
+    margin:auto;
+    margin-top:40px;
+}
+
+#students{
+    display: flex;
+    flex-direction: column;
+}
+
+.student{
+    width: 50%;
+}
+
+#students>button{
+    margin: auto;
+    margin-left:0;
+}
+
+
+}
+
+/*PC*/
+
+@media (max-width: 1200px) {
+
+.lesbuttons{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+#ajoutstudentDiv{
+    margin:auto;
+    margin-top:20px;
+}
+
+form>p{
+    text-align: center;
+}
+
+}
